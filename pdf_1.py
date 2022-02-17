@@ -1,9 +1,9 @@
-import PyPDF3
+import PyPDF2
 
 arquivo = open('teste.pdf', 'rb')
 print(arquivo)
 
-lerPDF = PyPDF3.PdfFileReader(arquivo)
+lerPDF = PyPDF2.PdfFileReader(arquivo)
 print(lerPDF)
 
 numero_de_pagina = lerPDF.getNumPages()
